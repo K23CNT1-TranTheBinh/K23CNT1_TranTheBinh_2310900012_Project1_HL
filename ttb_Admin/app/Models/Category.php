@@ -25,4 +25,11 @@ class Category extends Model
         'status' => 'boolean',
         'created_at' => 'datetime'
     ];
+   public function products()
+{
+    return $this->hasMany(
+        Product::class,
+        'category_id'
+    );
+}
 }

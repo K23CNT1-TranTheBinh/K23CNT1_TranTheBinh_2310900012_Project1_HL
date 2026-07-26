@@ -67,11 +67,11 @@
         Danh mục
     </a>
 
-    <a href="#">
+    <a href="/admin/brands">
         Thương hiệu
     </a>
 
-    <a href="#">
+    <a href="/admin/products">
         Sản phẩm
     </a>
 
