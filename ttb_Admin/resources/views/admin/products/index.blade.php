@@ -15,7 +15,36 @@ class="btn btn-primary mb-3">
 id="search"
 class="form-control mb-3"
 placeholder="Tìm kiếm sản phẩm...">
+<script>
 
+document.getElementById('search').addEventListener('keyup', function(){
+
+    let keyword = this.value;
+
+
+    fetch("/admin/products?keyword=" + keyword)
+
+    .then(response => response.text())
+
+    .then(data => {
+
+
+        let html = new DOMParser()
+        .parseFromString(data,'text/html')
+        .querySelector('table')
+        .innerHTML;
+
+
+        document.querySelector('table').innerHTML = html;
+
+
+    });
+
+
+});
+
+
+</script>
 @if(session('success'))
 
 <div class="alert alert-success">

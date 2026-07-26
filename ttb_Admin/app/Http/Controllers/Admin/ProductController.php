@@ -17,18 +17,35 @@ class ProductController extends Controller
     {
         $keyword = $request->keyword;
 
-        $products = Product::with(['category','brand'])
-            ->when($keyword, function ($query) use ($keyword) {
+       $products = Product::with(['category','brand'])
+    ->when($keyword, function ($query) use ($keyword) {
 
-                return $query->where(
+        return $query
+            ->where('name', 'like', '%' . $keyword . '%')
+
+            ->orWhereHas('category', function ($q) use ($keyword) {
+
+                $q->where(
                     'name',
                     'like',
                     '%' . $keyword . '%'
                 );
 
             })
-            ->orderBy('id', 'DESC')
-            ->paginate(5);
+
+            ->orWhereHas('brand', function ($q) use ($keyword) {
+
+                $q->where(
+                    'name',
+                    'like',
+                    '%' . $keyword . '%'
+                );
+
+            });
+
+    })
+    ->orderBy('id', 'asc')
+    ->paginate(5);
 
         return view(
             'admin.products.index',

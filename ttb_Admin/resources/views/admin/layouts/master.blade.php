@@ -75,7 +75,7 @@
         Sản phẩm
     </a>
 
-    <a href="#">
+    <a href="/admin/users">
         Khách hàng
     </a>
 
