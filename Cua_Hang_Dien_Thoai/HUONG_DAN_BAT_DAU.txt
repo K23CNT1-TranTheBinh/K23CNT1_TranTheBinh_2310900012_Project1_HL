@@ -1,0 +1,50 @@
+CUA HANG DIEN THOAI - BAN VIET HOA TOAN BO MA NGHIEP VU
+========================================================
+
+DA HOAN THANH
+-------------
+
+1. Sua loi validation.in khi them hoac sua san pham.
+2. Checkbox trang thai gui dung gia tri 0 hoac 1.
+3. Them thong bao kiem tra du lieu bang tieng Viet.
+4. Sua duong dan anh san pham cuc bo.
+5. Doi ten file nghiep vu cua ca khu nguoi dung va khu quan tri.
+   Giu nguyen tien to phan cong MBA_, TTB_ va NVL_.
+6. Doi ten Controller, Model, Middleware, command, Blade component va file SQL.
+7. Them SO_DO_FILE_DU_AN.md de tim code nhanh khi thuyet trinh.
+
+CACH CHAY
+---------
+
+1. Sao luu thu muc du an cu.
+2. Giai nen thu muc Cua_Hang_Dien_Thoai.
+3. Mo thu muc moi bang Visual Studio Code.
+4. Neu database da duoc tao tu ban cu, vao phpMyAdmin va chay dung 1 lan:
+
+   database/NVL_CapNhat_ChucNang.sql
+
+5. Chay:
+
+   composer dump-autoload
+   php artisan optimize:clear
+   php artisan serve
+
+6. Mo http://127.0.0.1:8000
+
+CO SO DU LIEU
+-------------
+
+Du an van dung database db_phone_shop. Khong can nhap lai SQL neu database
+tren phpMyAdmin van con, nhung can chay file cap nhat o buoc 4. Neu can tao
+lai toan bo, dung file:
+
+database/NVL_CoSoDuLieu_CuaHangDienThoai.sql
+
+LUU Y
+-----
+
+Ten file va ten lop PHP dung tieng Viet khong dau de an toan tren Composer
+PSR-4 va Windows. Cac thu muc he thong Laravel nhu app, config, resources,
+routes, storage, vendor va cac ten bang/cot MySQL phai giu nguyen.
+
+Xem day du trong HUONG_DAN_DU_AN.md va SO_DO_FILE_DU_AN.md.

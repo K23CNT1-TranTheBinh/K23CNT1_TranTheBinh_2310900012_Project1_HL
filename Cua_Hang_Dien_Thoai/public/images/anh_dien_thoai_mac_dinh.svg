@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#fff7ed"/>
+  <rect x="185" y="75" width="230" height="450" rx="38" fill="#ffffff" stroke="#f97316" stroke-width="14"/>
+  <rect x="215" y="125" width="170" height="315" rx="12" fill="#ffedd5"/>
+  <circle cx="300" cy="482" r="17" fill="#f97316"/>
+  <rect x="265" y="95" width="70" height="10" rx="5" fill="#f97316"/>
+  <text x="300" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#c2410c">PHONE</text>
+  <text x="300" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#c2410c">SHOP</text>
+  <text x="300" y="566" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#9a3412">Chưa có ảnh sản phẩm</text>
+</svg>
